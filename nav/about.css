@@ -1,0 +1,41 @@
+body {
+}
+
+header {
+    background: none;
+}
+
+#header--img {
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    width: 100%;
+    height: 100%;
+}
+
+#header--img div {
+    display: flex;
+    min-width: 85%;
+    height: 100%;
+    justify-content: center;
+    align-items: end;
+}
+
+#header--img div img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover; /* Evita distorção da imagem */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main--text {
+    width: 70%;
+    height: 100%;
+    background-color: red;
+}
