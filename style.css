@@ -8,13 +8,15 @@
 }
 
 * {
-    display: flex;
-    flex-direction: column;
     box-sizing: border-box;
     font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: var(--color2);
     font-family: var(--font-family);
 }
@@ -67,7 +69,7 @@ ul li:hover, ul i:hover {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     align-items: center;
 }
 
@@ -79,8 +81,10 @@ ul li:hover, ul i:hover {
 #header--callToAction {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    width: 100%;
+    height: 20vh;
 }
 
 #header--callToAction i {
