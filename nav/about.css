@@ -37,5 +37,22 @@ main {
 #main--text {
     width: 70%;
     height: 100%;
-    background-color: red;
+}   
+
+#main--text div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+#main--text h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+#main--text p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #999999;
 }
