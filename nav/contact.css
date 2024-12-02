@@ -1,3 +1,51 @@
+:root {
+    --color1: #F75A56;
+    --color2: #F2F2F2;
+    --color3: #161616;
+    --color4: #999999;
+
+    --font-family: "Poppins", sans-serif;
+}
+
 header {
     height: 100vh;
+    gap: 40px;
+}
+#header--title {
+    gap: 40px;
+}
+
+#header--title a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 80px;
+    padding: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(1, 85, 1);
+    background-color: var(--color2);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    gap: 10px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+#header--title a:hover {
+    border-radius: 25px;
+    box-shadow: inset 0px 0px 5px rgb(0, 0, 0);
+}
+
+#header--title a p,
+#header--title a i {
+    font-size: 25px;
+}
+
+#header--text {
+    width: 45%;
+}
+
+#header--text p {
+    text-align: center;
 }

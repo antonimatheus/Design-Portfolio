@@ -1,3 +1,12 @@
+:root {
+    --color1: #F75A56;
+    --color2: #F2F2F2;
+    --color3: #161616;
+    --color4: #999999;
+
+    --font-family: "Poppins", sans-serif;
+}
+
 body {
 }
 
@@ -49,6 +58,7 @@ main {
 #main--text h3 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+    color: var(--color3);
 }
 
 #main--text p {
