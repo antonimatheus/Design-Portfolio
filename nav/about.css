@@ -66,3 +66,19 @@ main {
     font-size: 20px;
     color: #999999;
 }
+
+@media (max-width: 768px) {
+
+    header {
+        height: 55vh;
+    }
+    
+    #header--img div {
+        height: 50vh;
+        object-fit: contain;
+    }
+
+    #main--text {
+        width: 85%;
+    }
+}
