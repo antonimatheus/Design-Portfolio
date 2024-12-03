@@ -50,6 +50,7 @@ nav {
 
 nav h3 {
     font-size: 23px;
+    text-align: center;
 }
 
 ul {
@@ -57,7 +58,7 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 20%;
+
 }
 
 ul li, ul i {
@@ -80,7 +81,7 @@ ul li a, ul i a {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 80vh;
+    height: 75vh;
     color: var(--color2);
     transition: opacity 0.3s ease-in-out;
 }
@@ -197,4 +198,34 @@ footer {
 footer p {
     font-weight: 300;
     color: var(--color4);
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 95vh;
+    }
+
+    nav {
+        height: 8vh;
+    }
+
+    header h3 {
+        display: none;
+    }
+
+    #header--title h1{
+        text-align: center;
+        font-size: 45px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main--imgs {
+        width: 95%;
+    }
 }

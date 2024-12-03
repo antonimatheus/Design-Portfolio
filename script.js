@@ -21,7 +21,7 @@ window.addEventListener('scroll', () => {
 const navigation = document.querySelector('nav');
 
 window.addEventListener('scroll', () => {
-    const intensity = Math.max(0, 1 - window.scrollY / (window.innerHeight * 0.4));
+    const intensity = Math.max(0, 1 - window.scrollY / (window.innerHeight * 0.3));
 
     // Ajuste dinâmico de cor para fundo e texto
     navigation.style.backgroundColor = intensity < 0.5 ? 'white' : '#F75A56';
