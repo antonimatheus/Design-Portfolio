@@ -10,6 +10,12 @@
 header {
     height: 100vh;
     gap: 40px;
+    background: none;
+    background-color: var(--color2);
+}
+
+header p {
+    color: var(--color3);
 }
 
 #header--title {
@@ -25,8 +31,8 @@ header {
     padding: 20px;
     border-radius: 20px;
     text-decoration: none;
-    color: rgb(1, 85, 1);
-    background-color: var(--color2);
+    color: var(--color2);
+    background-color: rgb(1, 85, 1);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     gap: 10px;
     cursor: pointer;
@@ -41,6 +47,7 @@ header {
 #header--title a p,
 #header--title a i {
     font-size: 25px;
+    color: var(--color2);
 }
 
 #header--text {

@@ -20,20 +20,8 @@ body {
     flex-direction: column;
     background-color: var(--color2);
     font-family: var(--font-family);
-    opacity: 0;
-    animation: fadeIn 1.2s ease-in-out forwards; /* Aplica a animação */
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px); /* Começa levemente abaixo */
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0); /* Finaliza no lugar original */
-    }
-}
 
 header {
     display: flex;
@@ -57,6 +45,7 @@ nav {
     position: fixed;
     z-index: 10;
     color: var(--color2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     background-color: var(--color1);
     transition: .3s;
 }
