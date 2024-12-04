@@ -20,6 +20,19 @@ body {
     flex-direction: column;
     background-color: var(--color2);
     font-family: var(--font-family);
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in-out forwards; /* Aplica a animação */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Começa levemente abaixo */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Finaliza no lugar original */
+    }
 }
 
 header {
