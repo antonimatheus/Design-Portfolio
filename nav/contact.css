@@ -10,12 +10,6 @@
 header {
     height: 100vh;
     gap: 40px;
-    background: none;
-    background-color: var(--color2);
-}
-
-header p {
-    color: var(--color3);
 }
 
 #header--title {
@@ -32,7 +26,7 @@ header p {
     border-radius: 20px;
     text-decoration: none;
     color: var(--color2);
-    background-color: rgb(1, 85, 1);
+    background-color: rgb(59, 122, 59);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     gap: 10px;
     cursor: pointer;
@@ -52,6 +46,7 @@ header p {
 
 #header--text {
     width: 65%;
+    max-width: 75%;
 }
 
 #header--text p {
