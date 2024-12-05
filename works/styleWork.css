@@ -1,0 +1,29 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
+}
+
+.main--imgs {
+    position: relative; /* Necessário para os elementos posicionados */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Define a largura de cada imagem */
+    max-width: 500px;
+    height: 550px; /* Define a altura fixa */
+    cursor: pointer;
+    overflow: hidden; /* Evita transbordamento */
+    background-color: blue;
+}
+
+.main--imgs img {
+    width: 100%; /* Garante que a imagem preencha o contêiner */
+    height: 100%; /* Garante que a imagem preencha o contêiner */
+    object-fit: cover; /* Evita distorção da imagem */
+    transition: transform 0.3s ease; /* Suaviza o zoom */
+}
