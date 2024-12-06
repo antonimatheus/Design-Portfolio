@@ -32,7 +32,7 @@ main {
     align-items: center;
     width: 100%; /* Define a largura de cada imagem */
     max-width: 600px;
-    height: 650px; /* Define a altura fixa */
+    height: 700px; /* Define a altura fixa */
     cursor: pointer;
     overflow: hidden; /* Evita transbordamento */
     background-color: blue;
