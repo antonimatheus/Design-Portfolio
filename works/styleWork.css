@@ -31,8 +31,8 @@ main {
     justify-content: center;
     align-items: center;
     width: 95%; /* Define a largura de cada imagem */
-    max-width: 500px;
-    height: 520px; /* Define a altura fixa */
+    max-width: 550px;
+    height: auto; /* Define a altura fixa */
     cursor: pointer;
     overflow: hidden; /* Evita transbordamento */
     background-color: blue;
