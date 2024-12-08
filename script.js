@@ -33,3 +33,7 @@ window.addEventListener('scroll', () => {
         item.style.color = intensity < 0.5 ? '#F75A56' : 'white';
     });
 });
+
+
+
+
