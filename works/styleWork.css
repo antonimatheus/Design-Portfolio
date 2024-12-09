@@ -9,6 +9,8 @@
 
 body {
     background-color: var(--color2);
+    gap: 60px;
+    font-family: var(--font-family);
 }
 
 header {
@@ -48,4 +50,32 @@ main {
 
 .main--imgs::after {
     background-color: #16161600;
+}
+
+
+.recomendações {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 95%;
+    gap: 20px;
+}
+
+.recomendações h3 {
+    font-size: 25px;
+}
+
+.recomendações > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.recomendações > div > div {
+    width: 23%;
+    max-width: 500px;
+    height: 330px;
+    overflow: hidden; /* Evita transbordamento */
+    background-color: red;
 }
