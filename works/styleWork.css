@@ -82,9 +82,9 @@ main {
 }
 
 .recomendações > div > div {
-    width: 23%;
+    width: 24%;
     max-width: 500px;
-    height: 330px;
+    height: 350px;
     overflow: hidden; /* Evita transbordamento */
     transition: transform 0.3s ease; /* Suaviza o zoom */
     background-color: red;
@@ -111,6 +111,7 @@ main {
 }
 
 .img-text--btn {
+    width: 330px;
     height: 15%;
 }
 
