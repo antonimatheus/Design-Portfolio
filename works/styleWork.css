@@ -101,6 +101,10 @@ main {
     opacity: 1; /* Torna visível no hover */
 }
 
+.img-text--btn {
+    height: 15%;
+}
+
 @media (max-width: 768px) {
     .recomendações {
         justify-content: center;
