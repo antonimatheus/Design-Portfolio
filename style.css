@@ -1,5 +1,5 @@
 :root {
-    --color1: #F75A56;
+    --color1: #fa413e;
     --color2: #F2F2F2;
     --color3: #161616;
     --color4: #999999;
@@ -28,7 +28,7 @@ header {
     flex-direction: column;
     width: 100%;
     height: 90vh;
-    background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url('assets/background.jpg');
+    background: linear-gradient(rgba(255, 0, 0, 0.6), rgba(255, 0, 0, 0.6)), url('assets/background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment:fixed ;

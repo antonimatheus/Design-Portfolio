@@ -1,7 +1,7 @@
 :root {
-    --color1: #F75A56;
+    --color1: #fa413e;
     --color2: #F2F2F2;
-    --color3: #161616;
+    --color3: #202020;
     --color4: #999999;
 
     --font-family: "Poppins", sans-serif;
@@ -23,7 +23,8 @@ header {
 
 .titleMain {
     text-transform: uppercase;
-    font-size: 40px;
+    text-align: center;
+    font-size: 35px;
     color: var(--color3);
 }
 

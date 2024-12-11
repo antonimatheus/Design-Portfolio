@@ -1,5 +1,5 @@
 :root {
-    --color1: #F75A56;
+    --color1: #fa413e;
     --color2: #F2F2F2;
     --color3: #161616;
     --color4: #999999;
@@ -45,7 +45,7 @@ header {
 }
 
 #header--text {
-    width: 65%;
+    width: 70%;
     max-width: 75%;
 }
 

@@ -24,13 +24,13 @@ window.addEventListener('scroll', () => {
     const intensity = Math.max(0, 1 - window.scrollY / (window.innerHeight * 0.3));
 
     // Ajuste dinâmico de cor para fundo e texto
-    navigation.style.backgroundColor = intensity < 0.5 ? 'white' : '#F75A56';
-    navigation.style.color = intensity < 0.5 ? '#F75A56' : 'white';
+    navigation.style.backgroundColor = intensity < 0.5 ? 'white' : '#fa413e';
+    navigation.style.color = intensity < 0.5 ? '#fa413e' : 'white';
 
     // Ajuste dinâmico da cor dos links e ícones dentro do nav
     const items = navigation.querySelectorAll('a, i');
     items.forEach(item => {
-        item.style.color = intensity < 0.5 ? '#F75A56' : 'white';
+        item.style.color = intensity < 0.5 ? '#fa413e' : 'white';
     });
 });
 
