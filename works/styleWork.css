@@ -28,6 +28,12 @@ header {
     color: var(--color3);
 }
 
+p {
+    width: 80%;
+    text-align: center;
+    color: var(--color4);
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -48,7 +54,7 @@ main {
     height: auto; /* Define a altura fixa */
     cursor: pointer;
     overflow: hidden; /* Evita transbordamento */
-    background-color: blue;
+    background-color: rgb(221, 221, 221);
 }
 
 .main--imgs img {
