@@ -37,3 +37,23 @@ window.addEventListener('scroll', () => {
 
 
 
+// Seleciona todas as imagens dentro de .main--imgsPortfolio
+let imagesportfolio = document.querySelectorAll('.main--imgsPortfolio img');
+const overlay = document.getElementById('overlay');
+const overlayImg = document.getElementById('overlay-img');
+
+// Função para exibir a imagem em tela cheia
+imagesportfolio.forEach(image => {
+    image.addEventListener('click', () => {
+        overlayImg.src = image.src;  // Define a imagem clicada como fonte da imagem em tela cheia
+        overlay.style.display = 'flex';  // Exibe a sobreposição
+    });
+});
+
+// Fechar a imagem ao clicar fora dela
+overlay.addEventListener('click', (event) => {
+    if (event.target === overlay) {  // Verifica se o clique foi fora da imagem
+        overlay.style.display = 'none';  // Fecha o overlay
+    }
+});
+
