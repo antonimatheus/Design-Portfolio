@@ -1,157 +1,164 @@
-:root {
-    --color1: #fa413e;
-    --color2: #F2F2F2;
-    --color3: #202020;
-    --color4: #999999;
+@charset "UTF-8";
 
-    --font-family: "Poppins", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --font-family: "Inter", sans-serif;
+
+  --color1: #d7a166; /* PrincipalColor – um tom quente e suave de laranja */
+  --color2: #ffffff; /* Branco puro – ideal para contrastes */
+  --color3: #333333; /* Cinza escuro – ótimo para textos ou fundos */
+  --color4: #1f1f1f; /* Cinza mais escuro – quase preto, forte e elegante */
+  --color5: #141414; /* OffBlack – preto com um toque suave, moderno */
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color2);
-    gap: 60px;
-    font-family: var(--font-family);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color2);
+  gap: 60px;
+  font-family: var(--font-family);
 }
 
 header {
-    height: 10vh;
-    background: none;
+  height: 10vh;
+  background: none;
 }
 
 .titleMain {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 35px;
-    color: var(--color3);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 35px;
+  color: var(--color1);
 }
 
 p {
-    width: 80%;
-    text-align: center;
-    color: var(--color4);
+  width: 80%;
+  font-size: 20px;
+  text-align: center;
+  color: var(--color3);
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
 }
 
-.main--imgsPortfolio{
-    position: relative; /* Necessário para os elementos posicionados */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 95%; /* Define a largura de cada imagem */
-    max-width: 880px;
-    height: auto; /* Define a altura fixa */
-    cursor: pointer;
-    overflow: hidden; /* Evita transbordamento */
-    background-color: rgb(221, 221, 221);
+.main--imgsPortfolio {
+  position: relative; /* Necessário para os elementos posicionados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%; /* Define a largura de cada imagem */
+  max-width: 880px;
+  height: auto; /* Define a altura fixa */
+  cursor: pointer;
+  overflow: hidden; /* Evita transbordamento */
+  border-radius: 5px;
+  background-color: rgb(221, 221, 221);
 }
 
 .main--imgsPortfolio img {
-    width: 100%; /* Garante que a imagem preencha o contêiner */
-    height: 100%; /* Garante que a imagem preencha o contêiner */
-    object-fit: cover; /* Evita distorção da imagem */
-    transition: transform 0.3s ease; /* Suaviza o zoom */
+  width: 100%; /* Garante que a imagem preencha o contêiner */
+  height: 100%; /* Garante que a imagem preencha o contêiner */
+  object-fit: cover; /* Evita distorção da imagem */
+  transition: transform 0.3s ease; /* Suaviza o zoom */
 }
 
 .main--imgsPortfolio::after {
-    background-color: #16161600;
+  background-color: #16161600;
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
 }
 
 #overlay-img {
-    max-width: 85%;
-    max-height: 85%;
-    border-radius: 20px;
+  max-width: 85%;
+  max-height: 85%;
+  border-radius: 20px;
 }
 
 .recomendações {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 95%;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 95%;
+  gap: 20px;
 }
 
 .recomendações h3 {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .recomendações > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .recomendações > div > div {
-    width: 24%;
-    max-width: 500px;
-    height: 350px;
-    overflow: hidden; /* Evita transbordamento */
-    transition: transform 0.3s ease; /* Suaviza o zoom */
-    background-color: red;
+  width: 24%;
+  max-width: 500px;
+  height: 350px;
+  overflow: hidden; /* Evita transbordamento */
+  transition: transform 0.3s ease; /* Suaviza o zoom */
+  background-color: red;
 }
 
 .recomendações > div > div:hover img {
-    transform: scale(1.1); /* Zoom suave ao passar o mouse */
+  transform: scale(1.1); /* Zoom suave ao passar o mouse */
 }
 
 .recomendações > div > div::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(247, 89, 86, 0.5); /* Vermelho translúcido */
-    opacity: 0; /* Invisível por padrão */
-    transition: opacity 0.3s ease; /* Suaviza a aparição */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 20%, 0.5);
+  opacity: 0; /* Invisível por padrão */
+  transition: opacity 0.3s ease; /* Suaviza a aparição */
 }
 
 .recomendações > div > div:hover::after {
-    opacity: 1; /* Torna visível no hover */
+  opacity: 1; /* Torna visível no hover */
 }
 
 .img-text--btn {
-    width: 330px;
-    height: 15%;
+  width: 330px;
+  height: 15%;
 }
 
 @media (max-width: 768px) {
-    .recomendações {
-        justify-content: center;
-        align-items: center;
-    }
+  .recomendações {
+    justify-content: center;
+    align-items: center;
+  }
 
-    .recomendações > div {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .recomendações > div {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    .recomendações > div > div {
-        width: 100%;
-    }
+  .recomendações > div > div {
+    width: 100%;
+  }
 }
