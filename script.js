@@ -25,7 +25,7 @@ window.addEventListener("scroll", () => {
   );
 
   // Ajuste dinâmico de cor para fundo e texto
-  navigation.style.backgroundColor = intensity < 0.5 ? "#d7a166" : "#ffffff";
+  navigation.style.backgroundColor = intensity < 0.5 ? "#333333" : "#ffffff";
   navigation.style.color = intensity < 0.5 ? "#fff" : "#333333";
 
   // Ajuste dinâmico da cor dos links e ícones dentro do nav

@@ -44,6 +44,7 @@ header {
   text-decoration: none;
   gap: 5px;
   width: 50%;
+  max-width: 500px;
   height: 70px;
   padding: 17px 40px;
   border-radius: 50px;
@@ -71,4 +72,19 @@ header {
   letter-spacing: 3px;
   background-color: var(--color3);
   box-shadow: var(--color5) 0px 7px 19px 0px;
+}
+
+@media (max-width: 768px) {
+
+  #header--text {
+    width: 80%;
+    max-width: 90%;
+  }
+
+  #whatsApp {
+    width: 75%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
 }
