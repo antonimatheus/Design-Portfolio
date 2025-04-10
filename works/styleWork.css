@@ -76,6 +76,8 @@ main {
 }
 
 .overlay {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -85,6 +87,7 @@ main {
   display: none;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   z-index: 9999;
 }
 
@@ -92,6 +95,11 @@ main {
   max-width: 85%;
   max-height: 85%;
   border-radius: 20px;
+}
+
+.overlay p {
+  color:#9b9b9b;
+  font-size: 16px;
 }
 
 .recomendações {
