@@ -140,7 +140,6 @@ main {
   width: 30%; /* Define a largura de cada imagem */
   max-width: 500px;
   height: 550px; /* Define a altura fixa */
-  cursor: pointer;
   overflow: hidden; /* Evita transbordamento */
 }
 
