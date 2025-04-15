@@ -55,11 +55,13 @@ nav {
 }
 
 nav h3 {
+  width: 30%;
   font-size: 25px;
   text-align: center;
 }
 
 ul {
+  width: 30%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -95,7 +97,11 @@ ul i a {
 }
 
 #header--title h1 {
-  font-size: clamp(28px, 6vw, 55px); /* Faz o tamanho do h1 se adaptar ao tamanho da tela */
+  font-size: clamp(
+    28px,
+    6vw,
+    55px
+  ); /* Faz o tamanho do h1 se adaptar ao tamanho da tela */
   margin: 0;
 }
 
@@ -245,6 +251,10 @@ footer p {
 
   nav {
     height: 8vh;
+  }
+
+  ul {
+    justify-content: start;
   }
 
   header h3 {
