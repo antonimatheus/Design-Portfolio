@@ -26,21 +26,11 @@ header {
   gap: 40px;
 }
 
-#header--text {
-  width: 65%;
-  max-width: 75%;
-}
-
-#header--text p {
-  font-size: 22px;
-  text-align: center;
-}
-
 form {
-  background-color: var(--color2);
   padding: 20px;
   width: 50%;
-  border-radius: 10px;
+  border-radius: 20px;
+  border: 1px solid var(--color2);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -48,7 +38,7 @@ label {
   display: flex;
   margin-bottom: 5px;
   font-weight: bold;
-  color:var(--color3);
+  color:var(--color2);
 }
 
 input {
@@ -130,15 +120,6 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-
-  #header--text {
-    width: 90%;
-    max-width: 95%;
-  }
-
-  #header--text p {
-    font-size: 18px;
-  }
 
   form {
     width: 90%;
